@@ -15,6 +15,6 @@ Future<List<String>> fetchProductList() async {
 }
 
 // fungsi untuk menambahkan produk baru ke dalam daftar
-void addProduct(String product) {
+Future<void> addProduct(String product) async {
   productList.add(product);
 }
