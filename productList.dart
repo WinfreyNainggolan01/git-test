@@ -13,3 +13,8 @@ Future<List<String>> fetchProductList() async {
   await Future.delayed(Duration(seconds: 2));
   return productList;
 }
+
+// fungsi untuk menambahkan produk baru ke dalam daftar
+void addProduct(String product) {
+  productList.add(product);
+}
